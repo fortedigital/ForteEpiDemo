@@ -1,0 +1,27 @@
+@model Forte.Styleguide.MvcPartialComponentViewModel
+
+@{
+    Layout = "~/Features/Layouts/InfrastructureLayout.cshtml";
+}
+
+@section Head
+{
+    <title>@Model.Name - Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .StyleguideComponentVariant__name {
+            text-decoration: underline;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .StyleguideComponentVariant__wrapper {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid grey;
+        }
+    </style>
+}
+
+@RenderBody()

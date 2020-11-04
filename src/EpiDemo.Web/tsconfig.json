@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "lib": [
+      "es5",
+      "es2015",
+      "dom"
+    ],
+    "jsx": "react",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strict": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules",
+    "obj"
+  ]
+}

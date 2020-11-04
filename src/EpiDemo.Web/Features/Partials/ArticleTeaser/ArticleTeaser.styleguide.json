@@ -1,0 +1,9 @@
+{
+  "model": {
+    "title": "Super Article",
+    "articleLink": {
+      "contentType": "ArticlePage"
+    }
+  },
+  "variants": ["normal"]
+}

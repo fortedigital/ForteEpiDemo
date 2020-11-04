@@ -1,0 +1,8 @@
+@using EpiDemo.Web.Features.Partials
+@model EpiDemo.Web.Features.Pages.HomePage
+
+@Html.PropertyFor(m => m.Name)
+
+@Html.PropertyFor(m => m.Content)
+
+@Html.Partial("Counter", new CounterViewModel { Value = 15 })

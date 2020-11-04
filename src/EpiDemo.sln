@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpiDemo.Web", "EpiDemo.Web\EpiDemo.Web.csproj", "{6EA29997-8433-42FA-9668-960BA52A4E48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EA29997-8433-42FA-9668-960BA52A4E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA29997-8433-42FA-9668-960BA52A4E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA29997-8433-42FA-9668-960BA52A4E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA29997-8433-42FA-9668-960BA52A4E48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6125791A-9705-4812-83DD-670161D06906}
+	EndGlobalSection
+EndGlobal

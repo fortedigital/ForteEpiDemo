@@ -1,0 +1,40 @@
+@using EPiServer.Core
+@using EPiServer.Framework.Web.Mvc.Html
+@using EPiServer.Globalization
+@using EPiServer.Web.Routing
+@using Forte.EpiCommonUtils.Infrastructure
+@using React.Web.Mvc
+@model object
+
+<!DOCTYPE html>
+@{
+    var requestContext = Html.ViewContext.RequestContext;
+    var language = requestContext.GetLanguage() ?? ContentLanguage.PreferredCulture.Name;
+}
+<html lang="@language">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        @RenderSection("Head", false)
+
+        @if (ContentReference.IsNullOrEmpty(requestContext.GetContentLink()) == false)
+        {
+            //Render only if rendering page otherwise it breaks styleguide
+            @Html.CanonicalLink()
+            @Html.AlternateLinks()
+        }
+        
+        @if (HostingEnvironment.IsLocalDev == false)
+        {
+            <link type="text/css" rel="stylesheet" href="@Webpack.GetStylesheetUrl("features")"/>
+        }
+        
+        @Html.RequiredClientResources("Header")
+    </head>
+    <body class="no-js">
+        @RenderBody()
+        <script src="@Webpack.GetScriptUrl("features")"></script>
+        @Html.ReactInitJavaScript()
+        @Html.RequiredClientResources("Footer")
+    </body>
+</html>

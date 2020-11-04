@@ -1,0 +1,10 @@
+@model EpiDemo.Web.Features.Blocks.LatestArticlesBlockViewModel
+
+<h1>@Model.Heading</h1>
+
+<ul>
+    @foreach (var article in Model.Articles)
+    {
+        <li>@article.Title</li>
+    }
+</ul>

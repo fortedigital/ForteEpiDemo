@@ -1,0 +1,24 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+
+@model Forte.Styleguide.MvcPartialComponentViewModel
+
+@if (!string.IsNullOrEmpty(Model.LayoutPath))
+{
+    Layout = Model.LayoutPath;
+}
+
+@if (Model.Error != null)
+{
+    <pre class="StyleguideComponent__error">@Model.Error</pre>
+}
+else
+{
+    foreach (var variant in @Model.Variants)
+    {
+        <span class="StyleguideComponentVariant__name">@variant.Name</span>        
+        <div class="StyleguideComponentVariant__wrapper">
+            @Html.Partial(@Model.PartialName, variant.Model, variant.ViewData)
+        </div>
+    }
+}

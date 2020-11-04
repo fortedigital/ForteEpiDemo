@@ -1,0 +1,6 @@
+/src/.idea/
+/src/**/*.csharp.ts
+/src/EpiDemo.Web/App_Data/*.log
+/src/EpiDemo.Web/bin
+/src/EpiDemo.Web/obj
+/src/EpiDemo.Web/Web.AppSettings.LocalDev.config
