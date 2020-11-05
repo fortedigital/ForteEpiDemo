@@ -118,6 +118,34 @@
       <HintPath>..\packages\EPiServer.Framework.11.13.2\lib\net461\EPiServer.Events.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EPiServer.Find, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
+      <HintPath>..\packages\EPiServer.Find.13.2.5\lib\net461\EPiServer.Find.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Find.Blocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
+      <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Blocks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Find.Cms, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
+      <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Cms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Find.Framework, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
+      <HintPath>..\packages\EPiServer.Find.Framework.13.2.5\lib\net461\EPiServer.Find.Framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Find.Optimizations, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
+      <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Optimizations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Find.Statistics, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
+      <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Statistics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPiServer.Find.UI, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
+      <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EPiServer.Forms, Version=4.27.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.Forms.4.27.0\lib\EPiServer.Forms.dll</HintPath>
     </Reference>
@@ -647,6 +675,7 @@
     <Content Include="modules\_protected\Forte.EpiserverRedirects\Forte.EpiserverRedirects.zip" />
     <Content Include="Web.config" />
     <Content Include="webpack.config.js" />
+    <None Include="episerver.find.config" />
     <None Include="EPiServerLog.config" />
     <None Include="packages.config" />
     <Content Include="Views\Styleguide\MvcPartialComponentContext.cshtml" />

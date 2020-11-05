@@ -80,3 +80,8 @@ _[Ss]cripts
 ######################
 node_modules
 dist
+
+######################
+# EPI Server not commited config #
+######################
+episerver.find.config
