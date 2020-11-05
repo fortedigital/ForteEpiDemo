@@ -118,26 +118,33 @@
       <HintPath>..\packages\EPiServer.Framework.11.13.2\lib\net461\EPiServer.Events.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Find, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Find, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
       <HintPath>..\packages\EPiServer.Find.13.2.5\lib\net461\EPiServer.Find.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Find.Blocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Find.Blocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
       <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Blocks.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Find.Cms, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Find.Cms, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
       <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Cms.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Find.Framework, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Find.Framework, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
       <HintPath>..\packages\EPiServer.Find.Framework.13.2.5\lib\net461\EPiServer.Find.Framework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Find.Optimizations, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Find.Optimizations, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
       <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Optimizations.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Find.Statistics, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Find.Statistics, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
       <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.Statistics.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="EPiServer.Find.UI, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.Find.UI, Version=13.2.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7">
       <HintPath>..\packages\EPiServer.Find.Cms.13.2.5\lib\net461\EPiServer.Find.UI.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EPiServer.Forms, Version=4.27.0.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <HintPath>..\packages\EPiServer.Forms.4.27.0\lib\EPiServer.Forms.dll</HintPath>
@@ -547,7 +554,6 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
-    <Content Include=".browserslistrc" />
     <Compile Include="Features\Blocks\LatestArticlesBlock\LatestArticlesBlock.cs" />
     <Compile Include="Features\Blocks\LatestArticlesBlock\LatestArticlesBlockController.cs" />
     <Compile Include="Features\Blocks\LatestArticlesBlock\LatestArticlesBlockViewModel.cs" />
@@ -588,7 +594,6 @@
     <Content Include="Features\Partials\Counter\Counter.styleguide.json" />
     <Content Include="Features\Styleguide\Layout.cshtml" />
     <Content Include="Features\Web.config" />
-    <Content Include="License.config" />
     <Compile Include="Migrations\SetupLanguages.cs" />
     <Content Include="module.config" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\3.5.0\ClientResources\Criteria\SubmittedValue.js" />
@@ -646,8 +651,6 @@
     <Content Include="modules\_protected\Geta.SEO.Sitemaps\module.config" />
     <Content Include="package.json" />
     <Content Include="postcss.config.js" />
-    <Content Include="Resources\LanguageFiles\English.xml" />
-    <Content Include="Resources\LanguageFiles\Norwegian.xml" />
     <Content Include="tsconfig.json" />
     <Content Include="Views\Web.config" />
     <Content Include="Global.asax" />
@@ -655,7 +658,6 @@
     <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.LanguageManager.config" />
     <Content Include="modules\_protected\EPiServer.Labs.LanguageManager\EPiServer.Labs.LanguageManager.zip" />
     <Content Include="modules\_protected\ImagePointEditor\ImagePointEditor.zip" />
-    <Content Include="ApplicationInsights.config" />
     <Content Include="modules\_protected\Shell\web.config" />
     <Content Include="modules\_protected\Shell\Shell.zip" />
     <Content Include="modules\_protected\CMS\web.config" />
@@ -671,19 +673,15 @@
     <Content Include="modules\_protected\EPiServer.Forms.Samples\Views\ElementBlocks\Web.config" />
     <Content Include="modules\_protected\EPiServer.Forms.Samples\module.config" />
     <Content Include="modules\_protected\Forte.EpiserverRedirects\Forte.EpiserverRedirects.zip" />
-    <None Include="Web.AppSettings.LocalDev.config" />
     <Content Include="Web.config" />
-    <Content Include="Web.Preproduction.config" />
-    <Content Include="Web.Production.config" />
-    <Content Include="Web.Dev.config" />
     <Content Include="webpack.config.js" />
+    <None Include="episerver.find.config" />
     <None Include="EPiServerLog.config" />
     <None Include="packages.config" />
     <Content Include="Views\Styleguide\MvcPartialComponentContext.cshtml" />
     <Content Include="Views\Styleguide\MvcPartialComponent.cshtml" />
     <Content Include="Views\Styleguide\Index.cshtml" />
     <None Include="Reinforced.Typings.settings.xml" />
-    <Content Include="Web.Release.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Features\Partials\Counter\Counter.tsx" />
